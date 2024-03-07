@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="340.0" prefWidth="600.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatritikfinal2.Controladores.Home">
+   <children>
+      <TextField fx:id="usField" layoutX="395.0" layoutY="107.0" />
+      <Label layoutX="282.0" layoutY="111.0" text="Nombre de Usuario" textFill="WHITE" />
+      <Label layoutX="325.0" layoutY="154.0" text="Contraseña" textFill="WHITE" />
+      <Label layoutX="342.0" layoutY="65.0" text="Iniciar Sesion" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="336.0" layoutY="210.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="149.0" text="Iniciar Sesión" />
+      <Label fx:id="msgError" layoutX="329.0" layoutY="184.0" text="Usuario/Contraseña no válidos" textFill="RED" visible="false" />
+      <PasswordField fx:id="contraField" layoutX="395.0" layoutY="150.0" />
+      <Label layoutX="56.0" layoutY="143.0" text="RITZ CHAT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Button layoutX="336.0" layoutY="254.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Registrarse" />
+   </children>
+</AnchorPane>

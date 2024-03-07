@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="417.0" prefWidth="568.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatritikfinal2.Controladores.Chat">
+   <children>
+      <TextField fx:id="msgField" layoutX="154.0" layoutY="356.0" prefHeight="32.0" prefWidth="287.0" />
+      <Button layoutX="448.0" layoutY="356.0" mnemonicParsing="false" onAction="#enviarMensaje" prefHeight="32.0" prefWidth="99.0" style="-fx-background-color: White;" text="Enviar" />
+      <TextArea fx:id="conversacion" layoutX="154.0" layoutY="27.0" prefHeight="317.0" prefWidth="393.0" />
+      <TableView fx:id="usTable" layoutX="14.0" layoutY="27.0" onMouseClicked="#changeUser" prefHeight="361.0" prefWidth="125.0">
+        <columns>
+          <TableColumn fx:id="usersNamesColumn" prefWidth="87.0" text="C1" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
